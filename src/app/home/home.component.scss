@@ -1,0 +1,49 @@
+
+/* styles.css */
+
+.header-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 100vh; /* Set the height to 100vh to make the container full-screen */
+  background-image: url('/assets/img/rm222batch5-kul-06.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.titre {
+  text-align: center; /* Center the text inside the div */
+}
+
+h1 {
+  /* Add styles for the heading if needed */
+  color: black; /* Set heading color to red (example) */
+  /* ... add more styles ... */
+}
+h1 {
+  flex: 1; /* The h1 will take the available width in the container */
+  /* Add any other styles specific to the h1 element */
+
+}
+
+img {
+  /* Add styles to control the size and spacing of the image */
+  width: 400px; /* Adjust the width as needed */
+  margin-left: 0px; /* Add spacing between the h1 and the image */
+}
+/* Bliniking text styles */
+.blinking-text {
+  animation: blink 0.5s infinite; /* Blinking animation */
+}
+
+/* Define the blinking animation */
+@keyframes blink {
+  0%, 100% {
+    color: rgb(255, 0, 0); /* Red color */
+  }
+  50% {
+    color: rgb(0, 255, 0); /* Green color */
+  }
+}

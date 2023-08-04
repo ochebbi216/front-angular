@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class="col-md-6 d-none d-md-block">
+      <img src="assets\img\3180764-removebg-preview.png" alt="Login Image" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <div class="login-form p-4" style="direction: rtl; text-align: right;">
+        <h2 class="text-center mb-4">تسجيل الدخول</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="username">اسم المستخدم</label>
+            <input type="text" class="form-control" id="username" formControlName="username" placeholder="أدخل اسم المستخدم">
+          </div>
+          <div class="form-group">
+            <label for="password">كلمة المرور</label>
+            <input type="password" class="form-control" id="password" formControlName="password" placeholder="أدخل كلمة المرور">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="loginForm.invalid" routerLink="/Parent">تسجيل الدخول</button>
+        </form>
+        <div class="text-center mt-3">
+          <p><a routerLink="/create-account">إنشاء حساب</a></p>
+          <p><a routerLink="/forget-password">هل نسيت كلمة المرور؟</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

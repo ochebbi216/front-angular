@@ -1,0 +1,28 @@
+<div class="container mt-5 pd">
+    <div class="row justify-content-center">
+      <div class="col-md-6 cl7">
+        <div class="card">
+          <div class="card-header">تاريخ الطفل</div>
+          <div class="card-body">
+            <div *ngIf="children.length === 0">.لم تتم إضافة أطفال حتى الآن</div>
+            <ul *ngIf="children.length > 0">
+              <li *ngFor="let child of children">{{ child }}</li>
+            </ul>
+            <button class="btn btn-danger mt-3 btn-sm" *ngIf="children.length > 0" (click)="clearHistory()">Clear History</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 cl6">
+        <div class="card">
+          <div class="card-header">قسم العائلة</div>
+          <div class="card-body">
+            <div class="form-group">
+            </div>
+            <button class="btn btn-primary btn-sm" routerLink="/Child">اضافة طفل</button>
+            <a routerLink="/" class="btn btn-secondary btn-sm">العودة إلى الصفحة الرئيسية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
